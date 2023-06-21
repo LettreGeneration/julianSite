@@ -1,0 +1,60 @@
+
+@keyframes fadeOut {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity:1;
+  }
+}
+
+.fadeOut {
+  background-color: black;
+  animation-name: fadeOut;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.custom-cursor {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60'><circle cx='30' cy='30' r='28' fill='rgba(150, 150, 149, 0.5)'/></svg>")
+    25 25, pointer;  /* Cursor when hovering */
+}
+
+
+* {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><circle cx='20' cy='20' r='18' fill='transparent' stroke='black' stroke-width='1' /></svg>")
+  20 20, default;
+}
+
+/* App.css */
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10%;
+  width: 10%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.smallscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 52px;
+  height: 52px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+
+.reduceSize {
+  line-height: 1.1;
+  letter-spacing: -7px;
+}

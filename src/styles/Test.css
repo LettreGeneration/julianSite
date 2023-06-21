@@ -1,0 +1,34 @@
+
+* {
+
+    cursor: url('./images/rond.jpg'), default;
+  }
+  button:hover {
+    cursor: url('./images/red_circle.png'), pointer;  /* Cursor when hovering */
+  }
+  a {
+    cursor: url('./images/red_circle.png'), pointer;  /* Cursor when hovering */
+  }
+  
+  .Test {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: yellow;
+  }
+  
+  .title {
+    font-size: 10rem;
+  }
+  
+  .cursor {
+    background-color: #111;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
